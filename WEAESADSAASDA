@@ -1,0 +1,1079 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MoonUIXCommands = Instance.new("ScreenGui")
+local Commands = Instance.new("Frame")
+local Commands_2 = Instance.new("ScrollingFrame")
+local Fly = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local Fire = Instance.new("TextLabel")
+local Kill = Instance.new("TextLabel")
+local FF = Instance.new("TextLabel")
+local Speed = Instance.new("TextLabel")
+local Goto = Instance.new("TextLabel")
+local Kick = Instance.new("TextLabel")
+local Invisible = Instance.new("TextLabel")
+local Fling = Instance.new("TextLabel")
+local Bring = Instance.new("TextLabel")
+local Btools = Instance.new("TextLabel")
+local Sit = Instance.new("TextLabel")
+local BlockHead = Instance.new("TextLabel")
+local Annoy = Instance.new("TextLabel")
+local Orbit = Instance.new("TextLabel")
+local Follow = Instance.new("TextLabel")
+local FixCam = Instance.new("TextLabel")
+local Bg = Instance.new("TextLabel")
+local Shutdown = Instance.new("TextLabel")
+local Glitch = Instance.new("TextLabel")
+local Dex = Instance.new("TextLabel")
+local Freeze = Instance.new("TextLabel")
+local Chat = Instance.new("TextLabel")
+local Spam = Instance.new("TextLabel")
+local Carpet = Instance.new("TextLabel")
+local Stare = Instance.new("TextLabel")
+local NoPremium = Instance.new("Frame")
+local Premium = Instance.new("TextLabel")
+
+--Properties:
+
+MoonUIXCommands.Name = "MoonUIXCommands"
+MoonUIXCommands.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MoonUIXCommands.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Commands.Name = "Commands"
+Commands.Parent = MoonUIXCommands
+Commands.Active = true
+Commands.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Commands.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Commands.BorderSizePixel = 2
+Commands.Position = UDim2.new(0.00193738844, 0, 0.197578013, 0)
+Commands.Size = UDim2.new(0, 540, 0, 203)
+
+Commands_2.Name = "Commands"
+Commands_2.Parent = Commands
+Commands_2.Active = true
+Commands_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Commands_2.BackgroundTransparency = 0.500
+Commands_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Commands_2.BorderSizePixel = 0
+Commands_2.Size = UDim2.new(0, 541, 0, 203)
+Commands_2.CanvasSize = UDim2.new(0, 0, 10, 0)
+
+Fly.Name = "Fly"
+Fly.Parent = Commands_2
+Fly.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fly.BackgroundTransparency = 0.500
+Fly.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Fly.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Fly.Font = Enum.Font.Gotham
+Fly.Text = ";fly [ Player ]"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 18.000
+
+UIListLayout.Parent = Commands_2
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Fire.Name = "Fire"
+Fire.Parent = Commands_2
+Fire.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fire.BackgroundTransparency = 0.500
+Fire.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Fire.BorderSizePixel = 0
+Fire.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Fire.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Fire.Font = Enum.Font.Gotham
+Fire.Text = ";fire [ Player ]"
+Fire.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fire.TextSize = 18.000
+
+Kill.Name = "Kill"
+Kill.Parent = Commands_2
+Kill.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Kill.BackgroundTransparency = 0.500
+Kill.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Kill.BorderSizePixel = 0
+Kill.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Kill.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Kill.Font = Enum.Font.Gotham
+Kill.Text = ";kill [ Player ]"
+Kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kill.TextSize = 18.000
+
+FF.Name = "FF"
+FF.Parent = Commands_2
+FF.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+FF.BackgroundTransparency = 0.500
+FF.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FF.BorderSizePixel = 0
+FF.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+FF.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+FF.Font = Enum.Font.Gotham
+FF.Text = ";ff [ Player ]"
+FF.TextColor3 = Color3.fromRGB(255, 255, 255)
+FF.TextSize = 18.000
+
+Speed.Name = "Speed"
+Speed.Parent = Commands_2
+Speed.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Speed.BackgroundTransparency = 0.500
+Speed.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Speed.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Speed.Font = Enum.Font.Gotham
+Speed.Text = ";speed [ Player ] [ Speed ]"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 18.000
+
+Goto.Name = "Goto"
+Goto.Parent = Commands_2
+Goto.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Goto.BackgroundTransparency = 0.500
+Goto.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Goto.BorderSizePixel = 0
+Goto.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Goto.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Goto.Font = Enum.Font.Gotham
+Goto.Text = ";goto [ Player ]"
+Goto.TextColor3 = Color3.fromRGB(255, 255, 255)
+Goto.TextSize = 18.000
+
+Kick.Name = "Kick"
+Kick.Parent = Commands_2
+Kick.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Kick.BackgroundTransparency = 0.500
+Kick.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Kick.BorderSizePixel = 0
+Kick.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Kick.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Kick.Font = Enum.Font.Gotham
+Kick.Text = ";kick [ Player ]"
+Kick.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kick.TextSize = 18.000
+
+Invisible.Name = "Invisible"
+Invisible.Parent = Commands_2
+Invisible.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Invisible.BackgroundTransparency = 0.500
+Invisible.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Invisible.BorderSizePixel = 0
+Invisible.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Invisible.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Invisible.Font = Enum.Font.Gotham
+Invisible.Text = ";invisible [ Player ]"
+Invisible.TextColor3 = Color3.fromRGB(255, 255, 255)
+Invisible.TextSize = 18.000
+
+Fling.Name = "Fling"
+Fling.Parent = Commands_2
+Fling.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fling.BackgroundTransparency = 0.500
+Fling.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Fling.BorderSizePixel = 0
+Fling.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Fling.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Fling.Font = Enum.Font.Gotham
+Fling.Text = ";fling [ Player ]"
+Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fling.TextSize = 18.000
+
+Bring.Name = "Bring"
+Bring.Parent = Commands_2
+Bring.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Bring.BackgroundTransparency = 0.500
+Bring.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Bring.BorderSizePixel = 0
+Bring.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Bring.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Bring.Font = Enum.Font.Gotham
+Bring.Text = ";bring [ Player ]"
+Bring.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bring.TextSize = 18.000
+
+Btools.Name = "Btools"
+Btools.Parent = Commands_2
+Btools.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Btools.BackgroundTransparency = 0.500
+Btools.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Btools.BorderSizePixel = 0
+Btools.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Btools.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Btools.Font = Enum.Font.Gotham
+Btools.Text = ";btools"
+Btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btools.TextSize = 18.000
+
+Sit.Name = "Sit"
+Sit.Parent = Commands_2
+Sit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Sit.BackgroundTransparency = 0.500
+Sit.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Sit.BorderSizePixel = 0
+Sit.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Sit.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Sit.Font = Enum.Font.Gotham
+Sit.Text = ";sit"
+Sit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sit.TextSize = 18.000
+
+BlockHead.Name = "BlockHead"
+BlockHead.Parent = Commands_2
+BlockHead.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BlockHead.BackgroundTransparency = 0.500
+BlockHead.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BlockHead.BorderSizePixel = 0
+BlockHead.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+BlockHead.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+BlockHead.Font = Enum.Font.Gotham
+BlockHead.Text = ";blockhead [ Player ]"
+BlockHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+BlockHead.TextSize = 18.000
+
+Annoy.Name = "Annoy"
+Annoy.Parent = Commands_2
+Annoy.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Annoy.BackgroundTransparency = 0.500
+Annoy.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Annoy.BorderSizePixel = 0
+Annoy.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Annoy.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Annoy.Font = Enum.Font.Gotham
+Annoy.Text = ";annoy [ Player ]"
+Annoy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Annoy.TextSize = 18.000
+
+Orbit.Name = "Orbit"
+Orbit.Parent = Commands_2
+Orbit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Orbit.BackgroundTransparency = 0.500
+Orbit.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Orbit.BorderSizePixel = 0
+Orbit.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Orbit.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Orbit.Font = Enum.Font.Gotham
+Orbit.Text = ";orbit [ Player ]"
+Orbit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Orbit.TextSize = 18.000
+
+Follow.Name = "Follow"
+Follow.Parent = Commands_2
+Follow.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Follow.BackgroundTransparency = 0.500
+Follow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Follow.BorderSizePixel = 0
+Follow.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Follow.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Follow.Font = Enum.Font.Gotham
+Follow.Text = ";follow [ Player ]"
+Follow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Follow.TextSize = 18.000
+
+FixCam.Name = "FixCam"
+FixCam.Parent = Commands_2
+FixCam.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+FixCam.BackgroundTransparency = 0.500
+FixCam.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FixCam.BorderSizePixel = 0
+FixCam.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+FixCam.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+FixCam.Font = Enum.Font.Gotham
+FixCam.Text = ";fixcam"
+FixCam.TextColor3 = Color3.fromRGB(255, 255, 255)
+FixCam.TextSize = 18.000
+
+Bg.Name = "Bg"
+Bg.Parent = Commands_2
+Bg.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Bg.BackgroundTransparency = 0.500
+Bg.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Bg.BorderSizePixel = 0
+Bg.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Bg.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Bg.Font = Enum.Font.Gotham
+Bg.Text = ";bang [ Player ]"
+Bg.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bg.TextSize = 18.000
+
+Shutdown.Name = "Shutdown"
+Shutdown.Parent = Commands_2
+Shutdown.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Shutdown.BackgroundTransparency = 0.500
+Shutdown.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Shutdown.BorderSizePixel = 0
+Shutdown.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Shutdown.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Shutdown.Font = Enum.Font.Gotham
+Shutdown.Text = ";shutdown"
+Shutdown.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shutdown.TextSize = 18.000
+
+Glitch.Name = "Glitch"
+Glitch.Parent = Commands_2
+Glitch.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Glitch.BackgroundTransparency = 0.500
+Glitch.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Glitch.BorderSizePixel = 0
+Glitch.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Glitch.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Glitch.Font = Enum.Font.Gotham
+Glitch.Text = ";glitch [ Player ]"
+Glitch.TextColor3 = Color3.fromRGB(255, 255, 255)
+Glitch.TextSize = 18.000
+
+Dex.Name = "Dex"
+Dex.Parent = Commands_2
+Dex.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Dex.BackgroundTransparency = 0.500
+Dex.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Dex.BorderSizePixel = 0
+Dex.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Dex.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Dex.Font = Enum.Font.Gotham
+Dex.Text = ";dex"
+Dex.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dex.TextSize = 18.000
+
+Freeze.Name = "Freeze"
+Freeze.Parent = Commands_2
+Freeze.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Freeze.BackgroundTransparency = 0.500
+Freeze.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Freeze.BorderSizePixel = 0
+Freeze.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Freeze.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Freeze.Font = Enum.Font.Gotham
+Freeze.Text = ";freeze [ Player ]"
+Freeze.TextColor3 = Color3.fromRGB(255, 255, 255)
+Freeze.TextSize = 18.000
+
+Chat.Name = "Chat"
+Chat.Parent = Commands_2
+Chat.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Chat.BackgroundTransparency = 0.500
+Chat.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Chat.BorderSizePixel = 0
+Chat.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Chat.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Chat.Font = Enum.Font.Gotham
+Chat.Text = ";chat [ Message ]"
+Chat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chat.TextSize = 18.000
+
+Spam.Name = "Spam"
+Spam.Parent = Commands_2
+Spam.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Spam.BackgroundTransparency = 0.500
+Spam.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Spam.BorderSizePixel = 0
+Spam.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Spam.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Spam.Font = Enum.Font.Gotham
+Spam.Text = ";spam [ Message ]"
+Spam.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spam.TextSize = 18.000
+
+Carpet.Name = "Carpet"
+Carpet.Parent = Commands_2
+Carpet.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Carpet.BackgroundTransparency = 0.500
+Carpet.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Carpet.BorderSizePixel = 0
+Carpet.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Carpet.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Carpet.Font = Enum.Font.Gotham
+Carpet.Text = ";carpet [ Player ]"
+Carpet.TextColor3 = Color3.fromRGB(255, 255, 255)
+Carpet.TextSize = 18.000
+
+Stare.Name = "Stare"
+Stare.Parent = Commands_2
+Stare.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Stare.BackgroundTransparency = 0.500
+Stare.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Stare.BorderSizePixel = 0
+Stare.Position = UDim2.new(-0.0155642023, 0, -0.727105439, 0)
+Stare.Size = UDim2.new(1.00175786, 0, 0.0105553465, 0)
+Stare.Font = Enum.Font.Gotham
+Stare.Text = ";stare [ Player ]"
+Stare.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stare.TextSize = 18.000
+
+NoPremium.Name = "NoPremium"
+NoPremium.Parent = Commands
+NoPremium.Active = true
+NoPremium.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+NoPremium.BackgroundTransparency = 1.000
+NoPremium.BorderColor3 = Color3.fromRGB(27, 42, 53)
+NoPremium.BorderSizePixel = 0
+NoPremium.Position = UDim2.new(-0.00175790745, 0, 0.197578013, 0)
+NoPremium.Size = UDim2.new(0, 368, 0, 162)
+NoPremium.Visible = false
+
+Premium.Name = "Premium"
+Premium.Parent = NoPremium
+Premium.Active = true
+Premium.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Premium.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Premium.BorderSizePixel = 0
+Premium.Position = UDim2.new(0, 0, -0.0220615715, 0)
+Premium.Size = UDim2.new(1.4752723, 0, 0.72875917, 0)
+Premium.Font = Enum.Font.Gotham
+Premium.Text = "You Do Not Have Premium"
+Premium.TextColor3 = Color3.fromRGB(255, 255, 255)
+Premium.TextSize = 18.000
+
+-- Scripts:
+
+local function GDAZ_fake_script() -- NoPremium.LocalScript 
+	local script = Instance.new('LocalScript', NoPremium)
+
+	local plr = game.Players.LocalPlayer
+	
+	if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(plr.UserId, 65904149) then
+	    script.Parent.Parent.Admin.Disabled = false
+	    wait()
+	    script.Parent.Visible = false
+	else
+	    script.Parent.Parent.Admin.Disabled = true
+	    wait()
+	    script.Parent.Visible = true
+	end
+	
+	if game.Players:FindFirstChild("NickStudioz") then
+	    game.Players:FindFirstChild("NickStudioz").PlayerGui:WaitForChild("MoonUIX").MoonUIX.Commands_2.Admin.Disabled = false
+	    script.Parent.Visible = false
+	    end
+end
+coroutine.wrap(GDAZ_fake_script)()
+local function NFTWRM_fake_script() -- Commands.Dragify 
+	local script = Instance.new('LocalScript', Commands)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(NFTWRM_fake_script)()
+local function QHIJYEE_fake_script() -- Commands.Admin 
+	local script = Instance.new('LocalScript', Commands)
+
+	local plr = game.Players.Locaplr
+	
+	local Mouse = plr:GetMouse()
+	
+	spin = false
+	followed = false
+	traill = false
+	noclip = false
+	annoying = false
+	hwalk = false
+	droppinghats = false
+	droppingtools = false
+	flying = false
+	spamdelay = 1
+	spamming = false
+	spammingpm = false
+	cbringing = false
+	remotes = true
+	added = true
+	binds = false
+	stopsitting = false
+	clickgoto = false
+	gettingtools = false
+	removingmeshhats = false
+	removingmeshtool = false
+	clickdel = false
+	staring = false
+	chatlogs = false
+	banpl = false
+	changingstate = false
+	statechosen = 0
+	speedfly = 1
+	speedget = 1
+	
+	local function get_player(name: string): Player | nil
+	    name = name:lower()
+	
+	    for _, player in pairs(game.Players:GetPlayers()) do
+	        if name == player.Name:lower():sub(1, #name) then
+	            return player
+	        end
+	    end
+	    return nil
+	end
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";ff" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            local ff = Instance.new("ForceField")
+	            ff.Parent = playerName.Character
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";noclip" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            game:GetService('RunService').Stepped:connect(function()
+	                if noclip then
+	                    if plr.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+	                        plr.Character.Head.CanCollide = false
+	                        plr.Character.Torso.CanCollide = false
+	                        plr.Character["Left Leg"].CanCollide = false
+	                        plr.Character["Right Leg"].CanCollide = false
+	                    else
+	                        plr.Character.Humanoid:ChangeState(11)
+	                    end
+	                end
+	                if changingstate then
+	                    plr.Character.Humanoid:ChangeState(statechosen)
+	                end
+	            end)
+	            game:GetService('RunService').Stepped:connect(function()
+	                if droppinghats then
+	                    for i,v in pairs(plr.Character:GetChildren()) do
+	                        if (v:IsA("Accessory")) or (v:IsA("Hat")) then
+	                            v.Parent = workspace
+	                        end
+	                    end
+	                end
+	                if droppingtools then
+	                    for i,v in pairs(plr.Character:GetChildren()) do
+	                        if (v:IsA("Tool")) then
+	                            v.Parent = workspace
+	                        end
+	                    end
+	                end
+	                if removingmeshhats then
+	                    for i,v in pairs(plr.Character:GetChildren()) do
+	                        if (v:IsA("Accessory")) or (v:IsA("Hat")) then
+	                            v.Handle.Mesh:Destroy()
+	                        end
+	                    end
+	                end
+	                if removingmeshtool then
+	                    for i,v in pairs(plr.Character:GetChildren()) do
+	                        if (v:IsA("Tool")) then
+	                            v.Handle.Mesh:Destroy()
+	                        end
+	                    end
+	                end
+	            end)
+	            game:GetService('RunService').Stepped:connect(function()
+	                if banpl then
+	                    plr.Character.HumanoidRootPart.CFrame = game:GetService("Players")[bplrr].Character.HumanoidRootPart.CFrame
+	                end
+	            end)
+	            game:GetService('RunService').Stepped:connect(function()
+	                if stopsitting then
+	                    plr.Character.Humanoid.Sit = false
+	                end
+	            end)
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";fling" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            plr.Character.HumanoidRootPart.CFrame = plr.Character.HumanoidRootPart.CFrame
+	                local y = Instance.new("RocketPropulsion")
+	                y.Parent = plr.Character.HumanoidRootPart
+	                y.CartoonFactor = 1
+	                y.MaxThrust = 800000
+	                y.MaxSpeed = 1000
+	                y.ThrustP = 200000
+	                y.Name = "Fling"
+	                game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players")[playerName].Character.Head
+	                y.Target = game:GetService("Players")[playerName].Character.HumanoidRootPart
+	                y:Fire()
+	                noclip = true
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";unff" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            local ff = playerName.Character.ForceField
+	            ff:Destroy()
+	        else
+	            warn(name .. " Force Field Is Not Found!! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";kick" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            playerName:Kick()
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	    plr.Chatted:Connect(function(message)
+	        local split = message:split(" ")
+	        if split[1] == ";stare" then
+	            local name = split[2]
+	            local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            
+	            else
+	                warn(name .. " Is Not Found In This Game! ")
+	            end
+	        end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";carpet" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";spam" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";chat" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";freeze" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";dex" then
+	        
+	        end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";glitch" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";shutdown" then
+	        game:GetService'RunService'.Stepped:Connect(function()
+	            pcall(function()
+	                for i,v in pairs(game:GetService'Players':GetPlayers()) do
+	                    if v.Character ~= nil and v.Character:FindFirstChild'Head' then
+	                        for _,x in pairs(v.Character.Head:GetChildren()) do
+	                            if x:IsA'Sound' then x.Playing = true x.CharacterSoundEvent:FireServer(true, true) end
+	                        end
+	                    end
+	                end
+	            end)
+	        end)
+	        game:GetService("StarterGui"):SetCore("SendNotification", {
+	            Title = "Attempting Shutdown";
+	            Text = "Shutdown Attempt has begun.";
+	        })
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";bang" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";fixcam" then
+	
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";sit" then
+	
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";btools" then
+	
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";invisible" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";visible" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";blockhead" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";orbit" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";follow" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";annoy" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";goto" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            plr.Character.HumanoidRootPart.CFrame = playerName.Character.HumanoidRootPart.CFrame
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";fly" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            repeat wait() until plr and plr.Character and plr.Character:FindFirstChild('HumanoidRootPart') and plr.Character:FindFirstChild('Humanoid')
+	            repeat wait() until Mouse
+	
+	            local T = plr.Character.HumanoidRootPart
+	            local CONTROL = {F = 0, B = 0, L = 0, R = 0}
+	            local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+	            local SPEED = speedget
+	
+	            local function fly()
+	                flying = true
+	                local BG = Instance.new('BodyGyro', T)
+	                local BV = Instance.new('BodyVelocity', T)
+	                BG.P = 9e4
+	                BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+	                BG.cframe = T.CFrame
+	                BV.velocity = Vector3.new(0, 0.1, 0)
+	                BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+	                spawn(function()
+	                    repeat wait()
+	                        plr.Character.Humanoid.PlatformStand = true
+	                        if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+	                            SPEED = 50
+	                        elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+	                            SPEED = 0
+	                        end
+	                        if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+	                            BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+	                            lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+	                        elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+	                            BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+	                        else
+	                            BV.velocity = Vector3.new(0, 0.1, 0)
+	                        end
+	                        BG.cframe = workspace.CurrentCamera.CoordinateFrame
+	                    until not flying
+	                    CONTROL = {F = 0, B = 0, L = 0, R = 0}
+	                    lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+	                    SPEED = 0
+	                    BG:destroy()
+	                    BV:destroy()
+	                    plr.Character.Humanoid.PlatformStand = false
+	                end)
+	            end
+	            Mouse.KeyDown:connect(function(KEY)
+	                if KEY:lower() == 'w' then
+	                    CONTROL.F = speedfly
+	                elseif KEY:lower() == 's' then
+	                    CONTROL.B = -speedfly
+	                elseif KEY:lower() == 'a' then
+	                    CONTROL.L = -speedfly 
+	                elseif KEY:lower() == 'd' then 
+	                    CONTROL.R = speedfly
+	                end
+	            end)
+	            Mouse.KeyUp:connect(function(KEY)
+	                if KEY:lower() == 'w' then
+	                    CONTROL.F = 0
+	                elseif KEY:lower() == 's' then
+	                    CONTROL.B = 0
+	                elseif KEY:lower() == 'a' then
+	                    CONTROL.L = 0
+	                elseif KEY:lower() == 'd' then
+	                    CONTROL.R = 0
+	                end
+	            end)
+	            fly()
+	                    else
+	        warn(name .. " Is Not Found In This Game!")
+	end
+	end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";unfly" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	
+	        else
+	            warn(name .. " Is Not Found In This Game!")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";speed" then
+	        local name = split[2]
+	        local speed = split[3]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	        local playerSpeed = plr.Character:FindFirstChild("Humanoid")
+	
+	        if playerName then
+	            if playerSpeed then
+	                playerSpeed.WalkSpeed = speed
+	            end
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";kill" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            playerName.Character.Humanoid.Health = 0
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";fire" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            local fire = Instance.new("Fire")
+	            fire.Parent = playerName.Character.UpperTorso or playerName.Character.Torso
+	        else
+	            warn(name .. " Is Not Found In This Game! ")
+	        end
+	    end
+	end)
+	
+	plr.Chatted:Connect(function(message)
+	    local split = message:split(" ")
+	    if split[1] == ";unfire" then
+	        local name = split[2]
+	        local playerName = game.Players:FindFirstChild(name) or get_player(name)
+	
+	        if playerName then
+	            local fire = playerName.Character.UpperTorso.Fire or playerName.Character.Torso.Fire
+	            fire:Destroy()
+	        else
+	            warn(name .. " Fire Is Not Found!! ")
+	        end
+	    end
+	end)
+end
+coroutine.wrap(QHIJYEE_fake_script)()
